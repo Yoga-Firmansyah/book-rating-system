@@ -18,4 +18,9 @@ class BookRatingController extends Controller
 
         return view('home', compact('books'));
     }
+    public function topAuthors()
+    {
+        $topAuthors = $this->bookRatingServices->getTopAuthors();
+        return view('top-authors', compact('topAuthors'));
+    }
 }

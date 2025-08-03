@@ -15,6 +15,9 @@
                 <x-nav-link :href="route('home')"  :active="request()->routeIs('home')">
                     Home
                 </x-nav-link>
+                <x-nav-link :href="route('top-authors')" :active="request()->routeIs('top-authors')">
+                    Top Authors
+                </x-nav-link>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -33,6 +36,9 @@
         <div class="px-2 pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('home')"  :active="request()->routeIs('home')">
                 Home
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('top-authors')" :active="request()->routeIs('top-authors')">
+                Top Authors
             </x-responsive-nav-link>
         </div>
     </div>

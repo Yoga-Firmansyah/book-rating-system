@@ -6,7 +6,7 @@ use App\Models\Author;
 use App\Models\Book;
 use App\Models\BookWithRating;
 use App\Models\Rating;
-use App\Models\TopAuthors;
+use App\Models\TopAuthor;
 
 class BookRatingServices
 {
@@ -24,5 +24,11 @@ class BookRatingServices
         return $query->orderByDesc('average_rating')
             ->orderByDesc('rating_count')
             ->paginate($request->input('filter') ?? 10);
+    }
+    public function getTopAuthors(int $limit = 10)
+    {
+        return TopAuthor::orderByDesc('upvote_count')
+            ->limit($limit)
+            ->get();
     }
 }

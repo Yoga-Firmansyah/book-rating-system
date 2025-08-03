@@ -20,7 +20,7 @@ return new class extends Migration
             FROM authors
             JOIN books ON books.author_id = authors.id
             JOIN ratings ON ratings.book_id = books.id
-            WHERE ratings.value >= 5
+            WHERE ratings.value > 5
             GROUP BY authors.id, authors.name
         SQL);
     }
