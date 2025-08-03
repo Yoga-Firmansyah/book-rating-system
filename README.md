@@ -109,3 +109,12 @@ Database seeding may take several minutes and can consume a lot of memory. You m
 ```bash
 php -d memory_limit=1G artisan db:seed
 ```
+
+---
+
+# Screenshot
+![Home](./screenshots/list-book.png)
+
+![Top 10](./screenshots/top-author.png)
+
+![Rating](./screenshots/rating.png)
