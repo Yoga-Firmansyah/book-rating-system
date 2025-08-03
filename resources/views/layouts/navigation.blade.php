@@ -18,6 +18,9 @@
                 <x-nav-link :href="route('top-authors')" :active="request()->routeIs('top-authors')">
                     Top Authors
                 </x-nav-link>
+                <x-nav-link :href="route('rating')" :active="request()->routeIs('rating')">
+                    Rating
+                </x-nav-link>
             </div>
 
             <!-- Mobile Menu Button -->
@@ -39,6 +42,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('top-authors')" :active="request()->routeIs('top-authors')">
                 Top Authors
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('rating')" :active="request()->routeIs(patterns: 'rating')">
+                Rating
             </x-responsive-nav-link>
         </div>
     </div>

@@ -31,4 +31,14 @@ class BookRatingServices
             ->limit($limit)
             ->get();
     }
+        public function getBooksByAuthor(Author $author)
+    {
+        return Book::where('author_id', $author->id)
+                   ->orderBy('name')
+                   ->get(['id', 'name']);
+    }
+     public function storeRating(array $data)
+    {
+        return Rating::create($data);
+    }
 }
