@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookRatingController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [BookRatingController::class, 'index'])->name('home');
