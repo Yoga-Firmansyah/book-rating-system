@@ -45,8 +45,6 @@ Follow the steps below to set up this project on your local machine:
 
 - Node.js & NPM
 
-)
-
 ## 🧰 Step-by-step Setup
 
 1. **Clone repository**  
