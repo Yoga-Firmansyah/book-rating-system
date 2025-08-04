@@ -57,7 +57,7 @@ Follow the steps below to set up this project on your local machine:
    composer install
    ```
 3. **Configuration Environment**  
-   Copy file .env dari .env.example
+   Copy the .env.example file to .env
    ```bash
    cp .env.example .env
    ```
